@@ -1,0 +1,43 @@
+---
+import TabsStyle from "../Tabs";
+import { Icon } from "astro-icon/components";
+import ThemeToggle from "../Themetoggle";
+---
+
+<div
+  class={`flex flex-row w-full sticky top-0 z-30 bg-transparent backdrop-blur-md md:justify-between xs:justify-between md:px-8 xs:px-0 gap-2`}
+>
+  <div class="flex items-center md:w-20px lg:w-auto xs:w-auto">
+    <a
+      href="#"
+      class="text-neutral dark:text-white dark:hover:text-white text-lg p-3 flex flex-row items-center gap-2"
+    >
+      <Icon
+        name="mdi:terminal"
+        font-size={"2em"}
+        class={"xs:size-7 md:mt-0 xs:mt-1.5"}
+      />
+      <span class="xs:hidden md:flex font-semibold">Luis Campos</span>
+    </a>
+  </div>
+  <TabsStyle client:load />
+  <div class="flex flex-row items-center gap-2">
+    <a
+      href="https://github.com/RuisuCode"
+      target="_blank"
+      class="dark:text-white text-primary hover:text-primary/80 dark:hover:text-base-content ms-5 xs:hidden md:flex"
+    >
+      <Icon name="jam:github" width="24" height="24" />
+      <span class="sr-only">GitHub account</span>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/luis-campos-13034b200"
+      target="_blank"
+      class="dark:text-white text-primary hover:text-primary/80 dark:hover:text-neutral ms-5 xs:hidden md:flex"
+    >
+      <Icon name="mdi:linkedin" width="24" height="24" />
+      <span class="sr-only">Linkedin account</span>
+    </a>
+    <ThemeToggle client:only />
+  </div>
+</div>

@@ -1,0 +1,39 @@
+---
+import { Icon } from "astro-icon/components";
+
+const DateNow = new Date().getFullYear();
+---
+
+<footer class="flex items-center rounded-lg shadow dark:bg-transparent">
+  <div
+    class="flex xs:flex-col w-11/12 mx-auto max-w-screen-xl p-4 md:flex-row xs:text-center md:items-center md:justify-between"
+  >
+    <span
+      class="md:text-sm xs:text-md text-primary sm:text-center xs:w-full dark:text-neutral"
+      >© {DateNow}
+      <a href="https://github.com/RuisuCode" class="hover:underline"
+        >RuisuCode</a
+      >. All Rights Reserved.
+    </span>
+    <div
+      class="flex mt-4 xs:justify-center md:justify-center gap-5 items-center xs:w-full sm:mt-0"
+    >
+      <a
+        href="https://github.com/RuisuCode"
+        target="_blank"
+        class="text-white hover:text-neutral dark:hover:text-base-content ms-5"
+      >
+        <Icon name="jam:github" width="24" height="24" />
+        <span class="sr-only">GitHub account</span>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/luis-campos-13034b200"
+        target="_blank"
+        class="text-white hover:text-neutral mt-1 dark:hover:text-base-content ms-5"
+      >
+        <Icon name="mdi:linkedin" width="26" height="26" />
+        <span class="sr-only">Linkedin account</span>
+      </a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,180 @@
+---
+import PicRuisu from "../components/PicRuisu";
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import myImage from "../assets/Ruisu/Ruisu2.jpg";
+import Picture from "astro/components/Picture.astro";
+import ExperienceTabs from "../components/ExperienceTabs";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+---
+
+<Layout title="Portfolio">
+  <div class="flex flex-col h-auto gap-1 mb-20 pt-10px">
+    <!-- id="Contenido 1" -->
+    <div id="Contenido 1" class="md:px-32 lg:px-56 xs:px-2">
+      <div class="flex flex-row mt-20 my-4 justify-center items-center py-2">
+        <!-- id="about" -->
+        <h1
+          id="first"
+          class="dark:text-primary text-primary-content md:text-2xl xs:hidden md:flex lg:text-4xl xs:text-xl text-center w-1/4 mr-2 font-bold"
+        >
+          About me
+        </h1>
+        <div
+          class="divider w-4/5 dark:divider-primary after:border-primary-content before:border-primary-content xs:hidden md:flex lg:after:border-t-8 lg:before:border-t-8 xs:after:border-t-4 xs:before:border-t-4"
+        >
+        </div>
+        <div
+          class="divider w-4/5 dark:divider-primary after:border-primary-content before:border-primary-content xs:flex md:hidden lg:after:border-t-8 lg:before:border-t-8 xs:after:border-t-4 xs:before:border-t-4"
+        >
+          <h1
+            id="about"
+            class="dark:text-primary text-primary-content md:text-2xl lg:text-4xl xs:text-xl text-center w-1/4 mr-2 font-bold"
+          >
+            About me
+          </h1>
+        </div>
+      </div>
+      <div
+        class="flex lg:flex-row xs:flex-col-reverse items-center justify-center xs:gap-10 lg:gap-2"
+      >
+        <div class="h-auto md:w-2/3 lg:w-1/2 xs:w-full px-6">
+          <p class="dark:text-primary text-primary-content text-justify">
+            <span class="font-bold">Hi👋, My name is Luis Campos </span>,and and
+            I am a developer who likes programming to create something new and I
+            always have fun in the process. I started in the development world 2
+            years ago in 2022 with web programming and I have progressed by
+            carrying out different projects until a company hired me. <span
+              class="font-bold"
+            >
+              I am a Full-stack Junior
+            </span>and I have worked in both the front-end and back-end areas
+            among many other things... <br />
+            <br /> Today, I work privately and independently in a company part-time
+            <span class="font-bold"> developing administrative web pages</span>,
+            applying my knowledge in front-end and design...<br />
+            <br /> I have goals as a developer and I want to reach the next level,
+            for this<span class="font-bold">
+              I will be practicing and developing different apps and websites</span
+            >, to continue progressing as a developer.<br /><br />
+          </p>
+          <h5 class="dark:text-primary text-primary-content font-semibold mb-1">
+            Here are some technologies I have worked on lately:
+          </h5>
+          <div class="flex flex-row xs:justify-center lg:justify-normal gap-15">
+            <ul
+              class="list-inside dark:text-primary/80 text-primary-content/80 list-disc"
+            >
+              <li class="mb-2">TypesScript</li>
+              <li class="mb-2">JavasScript</li>
+              <li class="mb-2">React</li>
+              <li class="mb-2">Git</li>
+            </ul>
+            <ul
+              class="list-inside dark:text-primary/80 text-primary-content/80 list-disc"
+            >
+              <li class="mb-2">Node.js</li>
+              <li class="mb-2">Adonis JS</li>
+              <li class="mb-2">React Native</li>
+            </ul>
+          </div>
+        </div>
+
+        <figure class="flex items-center justify-center lg:w-1/3 xs:w-full">
+          <PicRuisu client:load>
+            <Picture
+              src={myImage}
+              class={"rounded-xl"}
+              formats={["jpg"]}
+              width={290}
+              alt="Ruisu"
+            />
+          </PicRuisu>
+        </figure>
+      </div>
+    </div>
+
+    <div id="Contenido 2" class="md:px-32 lg:px-56 xs:px-2 h-70">
+      <div
+        id="scrollspy-1"
+        class="flex flex-row mt-20 my-4 justify-center items-center py-2"
+      >
+        <h1
+          id="first"
+          class="dark:text-primary text-primary-content md:text-2xl xs:hidden md:flex lg:text-4xl xs:text-xl text-center w-1/4 mr-2 font-bold"
+        >
+          Experience
+        </h1>
+        <div
+          class="divider w-4/5 dark:divider-primary after:border-primary-content before:border-primary-content xs:hidden md:flex lg:after:border-t-8 lg:before:border-t-8 xs:after:border-t-4 xs:before:border-t-4"
+        >
+        </div>
+        <div
+          class="divider w-4/5 dark:divider-primary after:border-primary-content before:border-primary-content xs:flex md:hidden lg:after:border-t-8 lg:before:border-t-8 xs:after:border-t-4 xs:before:border-t-4"
+        >
+          <h1
+            id="experience"
+            class="dark:text-primary text-primary-content md:text-2xl lg:text-4xl xs:text-xl text-center w-1/4 mr-2 font-bold"
+          >
+            Experience
+          </h1>
+        </div>
+      </div>
+      <ExperienceTabs client:load />
+    </div>
+    <div id="Contenido 3" class="md:px-32 lg:px-56 xs:px-2 h-70">
+      <div class="flex flex-row mt-20 my-4 justify-center items-center py-2">
+        <h1
+          id="projects"
+          class="dark:text-primary text-primary-content md:text-2xl xs:hidden md:flex lg:text-4xl xs:text-xl text-center w-1/4 mr-2 font-bold"
+        >
+          Projects
+        </h1>
+        <div
+          class="divider w-4/5 dark:divider-primary after:border-primary-content before:border-primary-content xs:hidden md:flex lg:after:border-t-8 lg:before:border-t-8 xs:after:border-t-4 xs:before:border-t-4"
+        >
+        </div>
+        <div
+          class="divider w-4/5 dark:divider-primary after:border-primary-content before:border-primary-content xs:flex md:hidden lg:after:border-t-8 lg:before:border-t-8 xs:after:border-t-4 xs:before:border-t-4"
+        >
+          <h1
+            id="projects"
+            class="dark:text-primary text-primary-content md:text-2xl lg:text-4xl xs:text-xl text-center w-1/4 mr-2 font-bold"
+          >
+            Projects
+          </h1>
+        </div>
+      </div>
+      <Projects client:load />
+    </div>
+    <!-- id="Contenido 4" -->
+    <div id="Contenido 4" class="md:px-32 lg:px-56 xs:px-2 h-70">
+      <div class="flex flex-row mt-20 my-4 justify-center items-center py-2">
+        <h1
+          id="contact"
+          class="dark:text-primary text-primary-content md:text-2xl xs:hidden md:flex lg:text-4xl xs:text-xl text-center w-1/4 mr-2 font-bold"
+        >
+          Contact me
+        </h1>
+        <div
+          class="divider w-4/5 dark:divider-primary after:border-primary-content before:border-primary-content xs:hidden md:flex lg:after:border-t-8 lg:before:border-t-8 xs:after:border-t-4 xs:before:border-t-4"
+        >
+        </div>
+        <div
+          class="divider w-4/5 dark:divider-primary after:border-primary-content before:border-primary-content xs:flex md:hidden lg:after:border-t-8 lg:before:border-t-8 xs:after:border-t-4 xs:before:border-t-4"
+        >
+          <h1
+            id="contact"
+            class="dark:text-primary text-primary-content md:text-2xl lg:text-4xl xs:text-xl text-center w-1/4 mr-2 font-bold"
+          >
+            Contact me
+          </h1>
+        </div>
+      </div>
+      <Contact client:load />
+    </div>
+  </div>
+</Layout>
+
+
