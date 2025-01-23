@@ -20,7 +20,7 @@ import ThemeToggle from "../Themetoggle";
       <span class="xs:hidden md:flex font-semibold">Luis Campos</span>
     </a>
   </div>
-  <TabsStyle client:load />
+  <TabsStyle client:only="react" />
   <div class="flex flex-row items-center gap-2">
     <a
       href="https://github.com/RuisuCode"
@@ -38,6 +38,6 @@ import ThemeToggle from "../Themetoggle";
       <Icon name="mdi:linkedin" width="24" height="24" />
       <span class="sr-only">Linkedin account</span>
     </a>
-    <ThemeToggle client:only />
+    <ThemeToggle client:only="react" />
   </div>
 </div>

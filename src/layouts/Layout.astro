@@ -9,11 +9,7 @@ interface Props {
 }
 ---
 
-<html
-  lang="en"
-  class="scroll-smooth focus:scroll-auto"
- 
->
+<html lang="en" class="scroll-smooth focus:scroll-auto">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,13 +19,13 @@ interface Props {
   <body
     class="bg-accent to-90% dark:bg-gradient-to-b from-base-300 to-base-100 min-h-screen min-w-screen flex flex-col justify-between"
   >
-    <RenderToaster client:load />
+    <RenderToaster client:only="react" />
     <div class="flex-grow flex flex-col h-full w-full justify-between">
-      <Header title={title} client:load />
+      <Header title={title} />
 
       <slot />
 
-      <Footer client:load />
+      <Footer />
     </div>
   </body><script is:inline src="../node_modules/flyonui/flyonui.js"></script>
 </html>
