@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import axios from "axios";
 import { toast } from "sonner";
-import CV from "../documents/Curriculum Vitae V2.1.1.pdf";
+import CV from "../documents/Curriculum Vitae Ingles V2.1.2.pdf";
 
 interface Isend {
   from: string;
@@ -216,7 +216,7 @@ export default function Contact() {
       </div>
       <h3 className="font-bold text-4xl text-white ">or</h3>
       <div>
-        <a href={CV} download={"Curriculum Vitae V2.1.1.pdf"}>
+        <a href={CV} download={"Curriculum Vitae.pdf"}>
           <button className="btn  dark:btn-gradient  dark:btn-secondary  btn-accent gap-4 rounded-lg h-13 border-2 border-primary hover:border-2 hover:border-primary hover:shadow-xs hover:shadow-primary font-bold w-56 text-lg">
             Download CV <Icon icon="mdi:file-download" width={26} height={26} />
           </button>
