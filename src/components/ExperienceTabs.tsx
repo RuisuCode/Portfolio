@@ -1,10 +1,8 @@
-// import { AnimatePresence, motion } from "motion/react";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 
 export default function ExperienceTabs() {
   const [tabs, setTabs] = useState(0);
-
   return (
     <>
       <div className="flex md:w-4/5 xs:w-full mx-auto h-680px p-1">
@@ -154,32 +152,6 @@ export default function ExperienceTabs() {
                   </div>
                 </div>
               </div>
-              {/*  <div className="accordion-item" id="cancel-icon">
-                <button
-                  className="accordion-toggle inline-flex items-center justify-between text-start"
-                  aria-controls="cancel-icon-collapse"
-                  aria-expanded="false"
-                >
-                  <span className="inline-flex items-center gap-x-4">
-                    <span className="icon-[tabler--ban] text-base-content size-6"></span>
-                    Can I cancel my order?
-                  </span>
-                  <span className="icon-[tabler--chevron-left] accordion-item-active:-rotate-90 text-base- size-4.5 shrink-0 transition-transform duration-300 rtl:-rotate-180"></span>
-                </button>
-                <div
-                  id="cancel-icon-collapse"
-                  className="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                  aria-labelledby="cancel-icon"
-                  role="region"
-                >
-                  <div className="px-5 pb-4">
-                    <p className="dark:text-base-content/80 font-normal text-primary/80   ">
-                      Scheduled delivery orders can be cancelled 72 hours prior
-                      to your selected delivery date for full refund.
-                    </p>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
           <div
@@ -266,32 +238,6 @@ export default function ExperienceTabs() {
                   </div>
                 </div>
               </div>
-              {/*  <div className="accordion-item" id="cancel-icon">
-                <button
-                  className="accordion-toggle inline-flex items-center justify-between text-start"
-                  aria-controls="cancel-icon-collapse"
-                  aria-expanded="false"
-                >
-                  <span className="inline-flex items-center gap-x-4">
-                    <span className="icon-[tabler--ban] text-base-content size-6"></span>
-                    Can I cancel my order?
-                  </span>
-                  <span className="icon-[tabler--chevron-left] accordion-item-active:-rotate-90 text-base- size-4.5 shrink-0 transition-transform duration-300 rtl:-rotate-180"></span>
-                </button>
-                <div
-                  id="cancel-icon-collapse"
-                  className="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                  aria-labelledby="cancel-icon"
-                  role="region"
-                >
-                  <div className="px-5 pb-4">
-                    <p className="dark:text-base-content/80 font-normal text-primary/80   ">
-                      Scheduled delivery orders can be cancelled 72 hours prior
-                      to your selected delivery date for full refund.
-                    </p>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
           <div
@@ -433,32 +379,6 @@ export default function ExperienceTabs() {
                   </div>
                 </div>
               </div>
-              {/*  <div className="accordion-item" id="cancel-icon">
-                <button
-                  className="accordion-toggle inline-flex items-center justify-between text-start"
-                  aria-controls="cancel-icon-collapse"
-                  aria-expanded="false"
-                >
-                  <span className="inline-flex items-center gap-x-4">
-                    <span className="icon-[tabler--ban] text-base-content size-6"></span>
-                    Can I cancel my order?
-                  </span>
-                  <span className="icon-[tabler--chevron-left] accordion-item-active:-rotate-90 text-base- size-4.5 shrink-0 transition-transform duration-300 rtl:-rotate-180"></span>
-                </button>
-                <div
-                  id="cancel-icon-collapse"
-                  className="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                  aria-labelledby="cancel-icon"
-                  role="region"
-                >
-                  <div className="px-5 pb-4">
-                    <p className="dark:text-base-content/80 font-normal text-primary/80   ">
-                      Scheduled delivery orders can be cancelled 72 hours prior
-                      to your selected delivery date for full refund.
-                    </p>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
           <div
@@ -526,33 +446,6 @@ export default function ExperienceTabs() {
                   </div>
                 </div>
               </div>
-
-              {/*  <div className="accordion-item" id="cancel-icon">
-                <button
-                  className="accordion-toggle inline-flex items-center justify-between text-start"
-                  aria-controls="cancel-icon-collapse"
-                  aria-expanded="false"
-                >
-                  <span className="inline-flex items-center gap-x-4">
-                    <span className="icon-[tabler--ban] text-base-content size-6"></span>
-                    Can I cancel my order?
-                  </span>
-                  <span className="icon-[tabler--chevron-left] accordion-item-active:-rotate-90 text-base- size-4.5 shrink-0 transition-transform duration-300 rtl:-rotate-180"></span>
-                </button>
-                <div
-                  id="cancel-icon-collapse"
-                  className="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-                  aria-labelledby="cancel-icon"
-                  role="region"
-                >
-                  <div className="px-5 pb-4">
-                    <p className="dark:text-base-content/80 font-normal text-primary/80   ">
-                      Scheduled delivery orders can be cancelled 72 hours prior
-                      to your selected delivery date for full refund.
-                    </p>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
