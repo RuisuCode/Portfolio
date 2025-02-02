@@ -57,7 +57,7 @@ export default function Projects() {
     {
       name: "Project Delta Athletics",
       type: "Public",
-      techs: ["TypeScript", "React", "Adonis Js", "Node Js"],
+      techs: ["TypeScript", "Adonis Js", "Node Js"],
       develop: "Back-End",
       img: deltaImg,
       description:
